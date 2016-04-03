@@ -118,3 +118,36 @@ form{
   margin-bottom: 5px;
 
 }
+
+/*--------Responsive for mobile--------*/
+@media only screen
+  and (max-device-width: 375px) {
+
+    #machine{
+      border-radius: 70px 70px 5px 5px;
+      background: url("../assets/steel.jpg") repeat 0 0;
+      background-color: gray;
+      padding: 20px;
+      width: 370px;
+      height: 600px;
+
+    }
+
+    #machineLegGap{
+      display: none;
+    }
+
+    #logo{
+      border-radius: 70px 70px 0px 0px;
+      margin-top: 10px;
+    }
+
+    #sodaButtons{
+        background: black;
+        padding: 1px;
+        width: 450px;
+    }
+
+
+
+  }
