@@ -1,0 +1,120 @@
+html{
+  font-family: sans-serif;
+}
+
+/*Machine body*/
+#machine{
+  border-radius: 70px 70px 5px 5px;
+  background: url("../assets/steel.jpg") repeat 0 0;
+  background-color: gray;
+  padding: 20px;
+  width: 500px;
+  height: 580px;
+  margin-top: 5%;
+}
+
+#machineLegGap{
+  width: 400px;
+  height: 80px;
+  background: white;
+  border-radius: 5px 5px 0px 0px;
+  margin-top: 50px;
+}
+
+#logo{
+  border-radius: 70px 70px 0px 0px;
+  margin-top: 10px;
+}
+
+#sodaButtons{
+    background: black;
+    padding: 1px;
+    width: 450px;
+}
+
+
+/*Soda rows, colums, buttons*/
+ul{
+  list-style-type:none;
+  justify-content: space-between;
+}
+
+li{
+  width: 115px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  font-weight: normal;
+  margin: 2px;
+
+}
+.row{
+  display: flex;
+
+}
+
+/*Individual soda buttons*/
+#cola{
+  background: #5B391E;
+}
+
+#cream{
+  background: #cd7f32;
+}
+
+#rootBeer{
+  background: brown;
+
+}
+
+#orange{
+  background: orange;
+
+}
+
+#strawberryLime{
+  background: #FF43A4;
+
+}
+
+#grape{
+  background: purple;
+}
+
+#blueBubblegum{
+  background: #00B7EB;
+}
+
+#greenApple{
+  background: green;
+}
+
+#pineapple{
+  background: gold;
+}
+
+
+/*display and input*/
+#moneyStuff{
+    background: black;
+    margin-top: 4px;
+    width: 445px;
+    border-radius: 0px 0px 5px 5px;
+    padding: 5px;
+    padding-top: 10px
+}
+
+#screen{
+  background: white;
+  color: black;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 40px;
+
+}
+
+form{
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+}
