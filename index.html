@@ -3,6 +3,7 @@
 <head>
     <title>Soda Machine Homework</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
@@ -14,45 +15,49 @@
       <div id="sodaButtons">
         <div>
           <ul class="row">
-            <li class="soda" data-price="1.50" id="cola">Cola</li>
-        	  <li class="soda" data-price="1.00" id="cream">Cream Soda</li>
-            <li class="soda" data-price="1.00" id="rootBeer">Root Beer</li>
+            <li class="drank" data-price="1.00" id="cola">Cola</li>
+        	  <li class="drank" data-price="1.50" id="cream">Cream Soda</li>
+            <li class="drank" data-price="1.50" id="rootBeer">Root Beer</li>
           <ul>
         </div>
 
         <div>
           <ul class="row">
-            <li class="soda" data-price="1.50" id="orange">Orange &amp; Cream</li>
-        	  <li class="soda" data-price="1.00" id="strawberryLime">Strawberry Lime</li>
-            <li class="soda" data-price="1.00" id="grape">Grape</li>
+            <li class="drank" data-price="1.75" id="orange">Orange &amp; Cream</li>
+        	  <li class="drank" data-price="1.75" id="strawberryLime">Strawberry Lime</li>
+            <li class="drank" data-price="1.25" id="grape">Grape</li>
           <ul>
         </div>
 
         <div>
           <ul class="row">
-            <li class="soda" data-price="1.50" id="blueBubblegum">Blue Bubblegum</li>
-            <li class="soda" data-price="1.00" id="greenApple">Green Apple</li>
-            <li class="soda" data-price="1.00" id="pineapple">Pineapple Cream</li>
+            <li class="drank" data-price="1.75" id="blueBubblegum">Blue Bubblegum</li>
+            <li class="drank" data-price="1.50" id="greenApple">Green Apple</li>
+            <li class="drank" data-price="1.25" id="pineapple">Pineapple Cream</li>
           <ul>
         </div>
       </div>
     <div id="moneyStuff">
       <div id="screen">
-        (placeholder)
+        <input id="cost" type="text"/>
       </div>
 
       <form>
-        <input type="text">
-        <input type="submit" value="submit">
+        <input id="paymentAmount" type="text">
+        <button id="submitPayment"> Pay </button>
       </form>
     </div>
 
     <div id="machineLegGap"></div>
 
 
+
+
+
 </div>
 
 </center>
+
 
 </body>
 </html>

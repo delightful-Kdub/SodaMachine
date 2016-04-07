@@ -1,29 +1,24 @@
 
-//first interaction, "ok bye" on scroll down
-window.onscroll = function() {firstFunction()};
+$(".drank").on('click', function() {
+    var cost = $(this).data('price'); //clicking soda holds price
+    $('#cost').val(cost); //price appears in textbox ("#screen.#cost")
 
-function firstFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.getElementById("bye").className = "blacktext";
-    } else {
-        document.getElementById("bye").className = "whitetext";
+
+});
+
+$('#submitPayment').on('click', function() {
+    var moneyIn =  $('#paymentAmount').val(); //holds the amt put in machine
+    if(moneyIn < cost){
+      $('#cost').text('Please insert more ca$h.'); //if amt in isn't enough for the soda
     }
-}
 
-//second interaction, green box disappears on mouse over
-function secondDisappear(x) {
-    x.style.height = "0px";
-    x.style.width = "0px";
+    if(moneyIn = cost){
+      $('#cost').text('Enjoy your soda!'); //if the amt in is the same as the soda
+    }
 
-}
+    var change = (moneyIn - cost); //math to determine user's change
 
-function secondNormal(x) {
-    x.style.height = "150px";
-    x.style.width = "150px";
-}
-
-
-//third ingteraction, on focus heckle
-function thirdFunction() {
-    alert("Oh, you think you have something to say?");
-}
+    if(moneyIn > cost){
+      $('#cost').text('Enjoy your soda and' + .val(change) + 'change!'; //if the user pays more than the cost
+    }
+});
